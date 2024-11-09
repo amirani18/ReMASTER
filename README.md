@@ -1,4 +1,7 @@
 # Readme 
+Hello and welcome to a stock price analysis for an artificial intelligence project.
+![initimage](StockMarket.png)
+
 This is the official code for the extension of the AAAI-2024 paper: **MASTER: Market-Guided Stock Transformer for Stock Price Forecasting**. [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/27767)  [[ArXiv preprint]](https://arxiv.org/abs/2312.15235) 
 
 MASTER is a stock transformer for stock price forecasting, which models the momentary and cross-time stock correlation and guides feature selection with market information.
