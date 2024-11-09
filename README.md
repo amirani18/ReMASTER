@@ -65,6 +65,9 @@ The published data went through the following necessary preprocessing.
 2. Drop NA labels and 5% of the most extreme labels, and perform **daily Z-score normalization** on labels. 
 - Daily Z-score normalization is a common practice in Qlib to standardize the labels for stock price forecasting. To mitigate the difference between a normal distribution and groundtruth distribution, we filtered out 5\% of most extreme labels in training. Note that the reported RankIC compares the output ranking with the groundtruth, whose value is not affected by the label normalization.
 
+### Testing
+The NASDAQ100 dataset is split into training, validation, and test sets based on a time-based split. Earlier dates are used for training and more recent dates are used for testing. They are then converted to .pkl files.
+
 ## Cite
 If you use the data or the code, please cite our work! :smile:
 ```latex
