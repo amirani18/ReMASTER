@@ -1,4 +1,5 @@
 /data
 
-# Ignore all CSV files in the project
+# Ignore all CSV and PKL files in the project
 *.csv
+*.pkl
