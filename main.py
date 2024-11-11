@@ -1,7 +1,7 @@
 from master import MASTERModel
 import pickle
 
-universe = 'NQ100' # or 'csi800' OR 'csi300'
+universe = 'csi300' # or 'csi800' OR 'csi300'
 
 # Please install qlib first before load the data.
 with open(f'data/{universe}/{universe}_dl_train.pkl', 'rb') as f:
@@ -41,13 +41,13 @@ model = MASTERModel(
     save_path='model/', save_prefix=universe
 )
 
-# Train
-model.fit(dl_train, dl_valid)
-print("Model Trained.")
+# # Train
+# model.fit(dl_train, dl_valid)
+# print("Model Trained.")
 
-# Test
-predictions, metrics = model.predict(dl_test)
-print(metrics)
+# # Test
+# predictions, metrics = model.predict(dl_test)
+# print(metrics)
 
 # Load and Test
 param_path = f'model/{universe}master_0.pkl'
